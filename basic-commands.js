@@ -37,3 +37,40 @@ console.log('Remove espaços vazios à esquerda', ' Hello World!, '.trimLeft());
 console.log('Remove espaços vazios à direita', ' Hello World!, '.trimRight());
 console.log('Remove espaços vazios', ' Hello World!, '.trim());
 console.log('distribuir strings em array', 'Hello World'.split(' '));
+
+
+//Datas
+console.log('');
+console.log('---Datas---');
+let myDate = new Date(); //data atual
+
+let myDate1 = new Date('2019-11-20'); //Cria a data GMT. Neste caso entende-se que é 2019-11-20 às 00h e subtrai 3 horas para pegar o horário de SP
+let myDate2 = new Date(2019, 9, 21); // format Y, m, d. O mês começa no 0.
+console.log( "Mili segundos", myDate.getMilliseconds() );
+console.log( "Segundos", myDate.getSeconds() );
+console.log( "Minutos", myDate.getMinutes() );
+console.log( "Horas", myDate.getHours() );
+console.log( "Dia", myDate.getDate() );
+console.log( "Mês", myDate.getMonth() );
+console.log( "Mês", myDate.getMonth() );
+console.log( "Ano", myDate.getYear() );
+console.log( "Ano no formato yyyy", myDate.getFullYear() );
+console.log( "Timestamp", myDate.getTime() );
+console.log( "Formato JSON", myDate.toJSON());
+let myDate3 = new Date("2019-11-21T19:53:37.357Z"); //Também pode ser setado dessa forma
+//Também é possível setar datas
+myDate.setMilliseconds(0) ;
+myDate.setSeconds(0); 
+myDate.setMinutes(0);
+myDate.setHours(0); 
+myDate.setDate(0);
+myDate.setMonth(0);
+myDate.setMonth(0);
+myDate.setYear(0);
+myDate.getFullYear(0);
+
+
+
+
+
+
